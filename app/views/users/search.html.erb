@@ -1,0 +1,6 @@
+<ul>
+	<% @users.each do |user| %>
+	<li><%= link_to user.Name, :action => 'show', :id => user.id %></li>
+	<li><%= link_to user.Email, :action => 'show', :id => user.id %></li>
+	<% end %>
+</ul>

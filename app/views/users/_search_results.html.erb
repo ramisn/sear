@@ -1,0 +1,5 @@
+<ul>
+	<% @users.each do |user| %>
+	<li><%= link_to user.name :action => 'show', :id => 'search_field' %></li>
+	<% end %>
+</ul>
